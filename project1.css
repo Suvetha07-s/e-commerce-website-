@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.first{
+    z-index: -1;
+    width: 40%;
+    height: 100vh;
+    background: rgba(255, 111, 0, 0.959);
+}
+.sec{
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    background:rgba(224, 112, 7, 0.803) ;
+}
+.third{
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    background:rgb(236, 131, 32) ;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: center;
+
+} 
+nav ul li{
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color: rgb(112, 6, 6);
+
+    padding: 0.3rem 1.3rem;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #c8ebb1;
+    z-index: -1;
+    transition:0.5s ;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.name{
+    font-size: 2rem;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: bolder;
+    width: 100%;
+    height: 70px;
+    margin-left:5% ;
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(112, 6, 6);
+    margin-top: 10px;
+    margin-left: 5%;
+    
+}
+.name:first-letter{
+    color: rgb(212, 160, 16);
+
+}
+.foto{
+    position: absolute;
+    right: 100px;
+    top: 70px;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 40px;
+
+
+}
+ .container button{
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    background-color: #494234;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left:25%;
+   margin-top: 35%;
+}
+.des{
+    position: absolute;
+    display: flex;
+    top: 57%;
+    left: 5%;
+
+}
+.des .t1{
+    padding: 1.5rem;
+}
+.des .t2{
+    padding: 1.5rem;
+}
+.des .t3{
+    padding: 2rem;
+}
+.abtus{
+    color: white;
+    padding: 5px 0 20px 50px;
+}
+#abt{
+    background-color: #494234;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.about{
+    background-color: #494234;
+}
+
+#products {
+    padding: 20px;
+    
+}
+#products1 {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    margin-left: 30px;
+}
+.products1-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    margin-left: 30px;
+}
+.product img:hover{
+    transform: scale(1.09);
+}
+.product1 img:hover{
+    transform: scale(1.09);
+}
+.product {
+    border: 1px solid #7d1616;
+    padding: 15px ;
+    
+}
+.product1 {
+    border: 1px solid #7d1616;
+    padding: 15px ;
+    
+}
+#products h2{
+   font-weight: bolder;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 15px;
+}
+#products1 h2{
+   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+ }
+
+.product img {
+    max-width: 100%;
+    height: 50vh;
+    padding: auto;
+}
+.product1 img {
+    max-width: 100%;
+    height: 50vh;
+    padding: auto;
+}
+
+.product button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.product1 button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+ 
+
+.add-to-cart:hover {
+    background: #a51313;
+}
+#products{
+    background:linear-gradient(to right, #A9A9A9,#FF8225);
+}
+#products1{
+    background:linear-gradient(to right, #A9A9A9,#FF8225);
+}
+
+
+nav a i{
+    margin-right: .5em;
+}
+nav ul{
+    flex-wrap: wrap;
+    min-width: 782px;
+}
+.tc{
+    width: 100%;
+    height: 20vh;
+}
+footer{
+    background-color: #3d3636;
+    color:white;
+    margin-top: 60px;
+    width: 100%;
+    padding: 5px 100px 5px 5px;
+}
+.contact{
+    background:linear-gradient(to right, rgba(15, 13, 13, 0.521),rgb(30, 22, 22));
+    position: absolute;
+    padding: 5px 0 15px 10px;
+    width: 100%;
+    height: 25%;
+   
+}
+#contact{
+    background:linear-gradient(to right, rgba(15, 13, 13, 0.521),rgb(30, 22, 22));
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.i{
+   position: absolute;
+   margin-left: 1px;
+   margin-top: 10px;
+}
+.flw a{
+    text-decoration: none;
+    padding: 7px;
+    background-color: white;
+    
+    border-radius: 50%
+}
+.flw{
+    position: absolute;
+    margin-top: 5px;
+}
+.flw a i{
+    font-size:1.5em;
+    opacity:0.9;
+    padding: 4px 2px 4px 2px;
+   
+}
+.flw a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.flw a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.rating-container {
+    background:linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    display: grid;
+    border: 1px solid #0e0c0c;
+    padding: 15px ;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+.photo-upload,
+.message {
+    margin-bottom: 15px;
+}
+
+.photo-upload label,
+.message label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#photo {
+    display: block;
+}
+
+#message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #211c1c;
+}
+
+.rating-container button {
+    width: 50%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rating-container button:hover {
+    background-color: gold;
+}
+
+#output {
+    margin-top: 20px;
+    text-align: center;
+}
